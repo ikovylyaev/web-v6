@@ -13,4 +13,4 @@ plugins:
 collections:
   design:
     output: true
-    sort_by: id
+    sort_by: date
