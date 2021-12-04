@@ -1,0 +1,18 @@
+---
+id: 1
+title: our-history.su
+title-ru: our-history.su
+layout: post
+date: '2021-09-04 20:00:00 +0500'
+type: design
+categories: ux/ui
+categories-ru: ux/ui
+concept: concept
+concept-ru: концепт
+permalink: "/design/ourhistory/"
+number: "19"
+img: "19"
+year: 2021
+link: "https://www.behance.net/gallery/126700591/our-historyru-enciklopedija-rossijskoj-istorii"
+web: ""
+---

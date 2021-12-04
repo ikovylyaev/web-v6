@@ -1,0 +1,25 @@
+---
+id: 5
+title: petersburg subway
+title-ru: петербургский метрополитен
+layout: post
+date: '2021-03-07 20:00:00 +0500'
+type: design
+categories: navigation
+categories-ru: навигация
+concept: concept
+concept-ru: концепт
+permalink: "/design/subway/"
+number: "09"
+img: "09"
+year: 2021
+link: "https://www.behance.net/gallery/114945397/concept-of-the-logo-and-navigation-of-petersburg-subway"
+web: ""
+---
+
+<div class='row'>
+  <div class='col-12'>
+      <img src="{{site.url}}/img/bg/09.webp" style="width: 100%;" alt="{{page.title}}">
+      <h1 class="display-3">{{ page.title}}</h1>
+  </div>
+</div>

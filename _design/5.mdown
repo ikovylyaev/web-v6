@@ -1,0 +1,18 @@
+---
+id: 10
+title: studentsup
+title-ru: studentsup
+layout: post
+date: '2020-11-26 20:00:00 +0500'
+type: design
+categories: brand
+categories-ru: бренд
+concept: concept
+concept-ru: концепт
+permalink: "/design/studentsup/"
+number: "03"
+img: "03"
+year: 2020
+link: "https://www.behance.net/gallery/106871815/StudentsUP-koncept-vnutrennej-programmy-itmo"
+web: ""
+---

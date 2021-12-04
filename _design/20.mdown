@@ -1,0 +1,18 @@
+---
+id: 9
+title: buah
+title-ru: buah
+layout: post
+date: '2020-11-26 20:00:00 +0500'
+type: design
+categories: brand
+categories-ru: бренд
+concept: concept
+concept-ru: концепт
+permalink: "/design/buah/"
+number: "20"
+img: "20"
+year: 2020
+link: "https://www.behance.net/gallery/108513327/Buah-ajdentika-dostavki-svezhih-fruktov"
+web: ""
+---

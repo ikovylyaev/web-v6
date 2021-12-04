@@ -1,0 +1,18 @@
+---
+id: 16
+title: nature expedition
+title-ru: натуральный поход
+layout: post
+date: '2020-11-21 20:00:00 +0500'
+type: design
+categories: brand
+categories-ru: бренд
+concept: 
+concept-ru:
+permalink: "/design/natureexp/"
+number: "08"
+img: "08"
+year: 2020
+link: "https://www.behance.net/gallery/90215023/naturalnyj-pohod-logotip-serii-video-iz-pohodov"
+web: ""
+---

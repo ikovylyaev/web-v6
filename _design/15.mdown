@@ -1,0 +1,18 @@
+---
+id: 14
+title: ekaterinburg's portal
+title-ru: портал екатеринбурга
+layout: post
+date: '2020-06-16 20:00:00 +0500'
+type: design
+categories: ux/ui
+categories-ru: ux/ui
+concept: concept
+concept-ru: концепт
+permalink: "/design/ekb/"
+number: "15"
+img: "15"
+year: 2020
+link: "https://www.behance.net/gallery/99007345/koncept-veb-sajta-goroda-ekaterinburg"
+web: ""
+---
