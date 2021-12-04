@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,200;0,400;0,700;1,200;1,400;1,700&display=swap');
+/*
+font-family: 'IBM Plex Mono', monospace;
+font-family: 'IBM Plex Sans', sans-serif;
+*/
+
+@media (max-width: 750px) {
+    body{
+        padding: 25px;
+        background: #fff!important;
+        color: #000!important;
+        font-weight: 200!important;
+    }
+    .header, .header-half{
+        width: 100%;
+        margin-bottom: 1.5rem;
+        position: static;
+    }
+    .header .bg, .header-half .bg{
+        height: 100vh;
+        max-height: 300px;
+        width: 100%;
+        z-index: 10;
+        position: static;
+    }
+    .header .text, .header-half .text{
+        width: 100%;
+        z-index: 100;
+        transition: 0.3s;
+        padding: 10px 0;
+        color: #000;
+        transition: 0.3s;
+        position: static;
+    }
+
+    .header .text span, .header-half .text span{
+        margin-right: 25px;
+    }
+    
+    .header .text a,.header-half .text a{
+        color: #000;
+        text-decoration: none;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+        transition: .3s;
+    }
+    .header .text a:hover,.header-half .text a:hover{
+        color: #000;
+        text-decoration: none;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.6);
+        transition: .3s;
+    }
+
+    .nav-2{
+        display: none;
+    }
+    .nav-lang-1{
+        width: 100%;
+        margin-left: -1rem;
+        margin-top: 10px;
+    }
+    .nav-lang-2{
+        display: none!important;
+    }
+    .logotype{
+        width: 100%;
+        max-width: 300px;;
+    }
+    .logotype-footer{
+        width: 50%;
+    }
+}
+@media (min-width: 751px) {
+    body{
+        padding: 50px;
+        background: #fff!important;
+        color: #000!important;
+        font-weight: 200!important;
+    }
+    .logotype{
+        height: 100%; max-height: 40px; max-width: 20vw;
+    }
+    .logotype-footer{
+        height: 100%; max-height: 40px; max-width: 20vw;
+    }
+    .nav-lang-1{
+        display: none;
+    }
+    
+    .header{
+        width: 100%;
+        margin-bottom: 1.5rem;
+        height: 100vh;
+        min-height: calc(600px + 1.5rem);
+        position: relative;
+    }
+    .header .bg{
+        height: 100vh;
+        min-height: calc(600px + 1.5rem);
+        width: 100%;
+        z-index: 10;
+        position: absolute;
+        top: 0px;
+    }
+    .header .text{
+        height: 100vh;
+        min-height: calc(600px + 1.5rem);
+        width: 100%;
+        background: #2A2A2A;
+        position: absolute;
+        top: 0px;;
+        z-index: 100;
+        transition: 0.3s;
+        padding: 5vh;
+        color: #fff;
+        transition: 0.3s;
+        opacity: 0;
+    }
+
+    .header:hover .text{
+        transition: 0.3s;
+        opacity: 1;
+    }
+
+    .header .text span, .header-half .text span{
+        margin-right: 25px;
+    }
+
+    .header-half{
+        width: 100%;
+        margin-bottom: 1.5rem;
+        height: calc(100vh/2 - 0.75rem);
+        min-height: 300px;
+        position: relative;
+    }
+    .header-half .bg{
+        height: calc(100vh/2 - 0.75rem);
+        min-height: 300px;
+        width: 100%;
+        z-index: 10;
+        position: absolute;
+        top: 0px;
+        left: 0;
+    }
+    .header-half .text{
+        height: calc(100vh/2 - 0.75rem);
+        min-height: 300px;
+        width: 100%;
+        background: #2A2A2A;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 15;
+        transition: 0.3s;
+        padding: 5vh;
+        color: #fff;
+        transition: 0.3s;
+        opacity: 0;
+    }
+
+    .header-half:hover .text{
+        transition: 0.3s;
+        opacity: 1;
+    }
+    
+    .header .text a,.header-half .text a{
+        color: #fff;
+        text-decoration: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        transition: .3s;
+    }
+    .header .text a:hover,.header-half .text a:hover{
+        color: #fff;
+        text-decoration: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+        transition: .3s;
+    }
+    
+}
+
+
+.nav-link{
+    color: #000;
+    opacity: .6;
+    transition: 0.3s;
+    text-decoration: none;
+    padding: 0rem 1rem;
+}
+.nav-link:hover, .nav-link.active{
+    color: #000;
+    opacity: 1;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.link{
+    color: #000;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    transition: .3s;
+}
+.link:hover{
+    color: #000;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.6);
+    transition: .3s;
+}
