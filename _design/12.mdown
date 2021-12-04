@@ -1,5 +1,5 @@
 ---
-id: 20
+id: 0
 title: russia airlines
 title-ru: russia airlines
 layout: post

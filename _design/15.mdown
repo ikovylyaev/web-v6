@@ -1,5 +1,5 @@
 ---
-id: 14
+id: 6
 title: ekaterinburg's portal
 title-ru: портал екатеринбурга
 layout: post
