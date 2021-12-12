@@ -15,5 +15,5 @@ img: "21"
 year: 2020
 link: "https://www.figma.com/@ikovylyaev"
 link_text: "figma"
-web: "https://finka.ikovylyaev.com"
+web: "finka.ikovylyaev.com"
 ---
