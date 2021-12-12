@@ -1,5 +1,5 @@
 ---
-id: 15
+id: 6
 title: petersburg subway
 title-ru: петербургский метрополитен
 layout: post
@@ -14,6 +14,7 @@ number: "09"
 img: "09"
 year: 2021
 link: "https://www.behance.net/gallery/114945397/concept-of-the-logo-and-navigation-of-petersburg-subway"
+link_text: ""
 web: ""
 ---
 

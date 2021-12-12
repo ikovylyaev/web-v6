@@ -1,5 +1,5 @@
 ---
-id: 19
+id: 3
 title: greentech 
 title-ru: greentech
 layout: post
@@ -14,5 +14,6 @@ number: "11"
 img: "11"
 year: 2021
 link: ""
+link_text: ""
 web: ""
 ---

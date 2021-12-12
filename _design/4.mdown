@@ -1,5 +1,5 @@
 ---
-id: 13
+id: 8
 title: itmo.clubs
 title-ru: itmo.clubs
 layout: post
@@ -14,5 +14,6 @@ number: "02"
 img: "02"
 year: 2020
 link: ""
+link_text: ""
 web: ""
 ---

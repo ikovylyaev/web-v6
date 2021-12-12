@@ -71,7 +71,7 @@ layout: default
                             <span>концепт</span>
                         {% endif %}
                         {% if post.link != "" %}
-                            <a href='{{post.link}}' target="_blank">behance</a>
+                            <a href='{{post.link}}' target="_blank">{% if post.link_text != "" %}{{post.link_text}}{% else %}behance {% endif %}</a>
                         {% endif %}
                         {% if post.web != "" %}
                             <p style='opacity: .6; display: inline;'>/</p>   <a href="https://{{post.web}}" target="_blank">{{post.web}}</a>
@@ -93,7 +93,7 @@ layout: default
                             <span>концепт</span>
                         {% endif %}
                         {% if post.link != "" %}
-                            <a href='{{post.link}}' target="_blank">behance</a>
+                            <a href='{{post.link}}' target="_blank">{% if post.link_text != "" %}{{post.link_text}}{% else %}behance {% endif %}</a>
                         {% endif %}
                         {% if post.web != "" %}
                             <p style='opacity: .6; display: inline;'>/</p>   <a href="https://{{post.web}}" target="_blank">{{post.web}}</a>
@@ -113,7 +113,7 @@ layout: default
                                 <span>концепт</span>
                             {% endif %}
                             {% if post.link != "" %}
-                                <a href='{{post.link}}' target="_blank">behance</a>
+                                <a href='{{post.link}}' target="_blank">{% if post.link_text != "" %}{{post.link_text}}{% else %}behance {% endif %}</a>
                             {% endif %}
                             {% if post.web != "" %}
                                 <p style='opacity: .6; display: inline;'>/</p>   <a href="https://{{post.web}}" target="_blank">{{post.web}}</a>
@@ -135,7 +135,7 @@ layout: default
                                 <span>концепт</span>
                             {% endif %}
                             {% if post.link != "" %}
-                                <a href='{{post.link}}' target="_blank">behance</a>
+                                <a href='{{post.link}}' target="_blank">{% if post.link_text != "" %}{{post.link_text}}{% else %}behance {% endif %}</a>
                             {% endif %}
                             {% if post.web != "" %}
                                 <p style='opacity: .6; display: inline;'>/</p>   <a href="https://{{post.web}}" target="_blank">{{post.web}}</a>
@@ -155,7 +155,7 @@ layout: default
                             <span>концепт</span>
                         {% endif %}
                         {% if post.link != "" %}
-                            <a href='{{post.link}}' target="_blank">behance</a>
+                            <a href='{{post.link}}' target="_blank">{% if post.link_text != "" %}{{post.link_text}}{% else %}behance {% endif %}</a>
                         {% endif %}
                         {% if post.web != "" %}
                             <p style='opacity: .6; display: inline;'>/</p>   <a href="https://{{post.web}}" target="_blank">{{post.web}}</a>
@@ -177,7 +177,7 @@ layout: default
                             <span>концепт</span>
                         {% endif %}
                         {% if post.link != "" %}
-                            <a href='{{post.link}}' target="_blank">behance</a>
+                            <a href='{{post.link}}' target="_blank">{% if post.link_text != "" %}{{post.link_text}}{% else %}behance {% endif %}</a>
                         {% endif %}
                         {% if post.web != "" %}
                             <p style='opacity: .6; display: inline;'>/</p>   <a href="https://{{post.web}}" target="_blank">{{post.web}}</a>
@@ -197,7 +197,7 @@ layout: default
                                 <span>концепт</span>
                             {% endif %}
                             {% if post.link != "" %}
-                                <a href='{{post.link}}' target="_blank">behance</a>
+                                <a href='{{post.link}}' target="_blank">{% if post.link_text != "" %}{{post.link_text}}{% else %}behance {% endif %}</a>
                             {% endif %}
                             {% if post.web != "" %}
                                 <p style='opacity: .6; display: inline;'>/</p>   <a href="https://{{post.web}}" target="_blank">{{post.web}}</a>
@@ -219,7 +219,7 @@ layout: default
                                 <span>концепт</span>
                             {% endif %}
                             {% if post.link != "" %}
-                                <a href='{{post.link}}' target="_blank">behance</a>
+                                <a href='{{post.link}}' target="_blank">{% if post.link_text != "" %}{{post.link_text}}{% else %}behance {% endif %}</a>
                             {% endif %}
                             {% if post.web != "" %}
                                 <p style='opacity: .6; display: inline;'>/</p>   <a href="https://{{post.web}}" target="_blank">{{post.web}}</a>
@@ -239,7 +239,7 @@ layout: default
                             <span>концепт</span>
                         {% endif %}
                         {% if post.link != "" %}
-                            <a href='{{post.link}}' target="_blank">behance</a>
+                            <a href='{{post.link}}' target="_blank">{% if post.link_text != "" %}{{post.link_text}}{% else %}behance {% endif %}</a>
                         {% endif %}
                         {% if post.web != "" %}
                             <p style='opacity: .6; display: inline;'>/</p>   <a href="https://{{post.web}}" target="_blank">{{post.web}}</a>
@@ -261,7 +261,7 @@ layout: default
                             <span>концепт</span>
                         {% endif %}
                         {% if post.link != "" %}
-                            <a href='{{post.link}}' target="_blank">behance</a>
+                            <a href='{{post.link}}' target="_blank">{% if post.link_text != "" %}{{post.link_text}}{% else %}behance {% endif %}</a>
                         {% endif %}
                         {% if post.web != "" %}
                             <p style='opacity: .6; display: inline;'>/</p>   <a href="https://{{post.web}}" target="_blank">{{post.web}}</a>
@@ -281,7 +281,7 @@ layout: default
                                 <span>концепт</span>
                             {% endif %}
                             {% if post.link != "" %}
-                                <a href='{{post.link}}' target="_blank">behance</a>
+                                <a href='{{post.link}}' target="_blank">{% if post.link_text != "" %}{{post.link_text}}{% else %}behance {% endif %}</a>
                             {% endif %}
                             {% if post.web != "" %}
                                 <p style='opacity: .6; display: inline;'>/</p>   <a href="https://{{post.web}}" target="_blank">{{post.web}}</a>
@@ -303,7 +303,7 @@ layout: default
                                 <span>концепт</span>
                             {% endif %}
                             {% if post.link != "" %}
-                                <a href='{{post.link}}' target="_blank">behance</a>
+                                <a href='{{post.link}}' target="_blank">{% if post.link_text != "" %}{{post.link_text}}{% else %}behance {% endif %}</a>
                             {% endif %}
                             {% if post.web != "" %}
                                 <p style='opacity: .6; display: inline;'>/</p>   <a href="https://{{post.web}}" target="_blank">{{post.web}}</a>
@@ -323,7 +323,27 @@ layout: default
                             <span>концепт</span>
                         {% endif %}
                         {% if post.link != "" %}
-                            <a href='{{post.link}}' target="_blank">behance</a>
+                            <a href='{{post.link}}' target="_blank">{% if post.link_text != "" %}{{post.link_text}}{% else %}behance {% endif %}</a>
+                        {% endif %}
+                        {% if post.web != "" %}
+                            <p style='opacity: .6; display: inline;'>/</p>   <a href="https://{{post.web}}" target="_blank">{{post.web}}</a>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+            {% for post in site.design limit: 1 offset: 20 %}
+            <div class='col'>
+                <div class='header'>
+                    <div class='bg' style='background: url({{site.url}}/img/bg/{{post.img}}.webp); background-size: cover; background-position: center;'></div>
+                    <div class='text'>
+                        <h2 class="h3">{{ post.title-ru }}</h2>
+                        <span>{{ post.categories-ru }}</span>
+                        {% if post.concept == 'concept' %}
+                            <span>концепт</span>
+                        {% endif %}
+                        {% if post.link != "" %}
+                            <a href='{{post.link}}' target="_blank">{% if post.link_text != "" %}{{post.link_text}}{% else %}behance {% endif %}</a>
                         {% endif %}
                         {% if post.web != "" %}
                             <p style='opacity: .6; display: inline;'>/</p>   <a href="https://{{post.web}}" target="_blank">{{post.web}}</a>

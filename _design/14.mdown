@@ -1,5 +1,5 @@
 ---
-id: 5
+id: 16
 title: ural experience
 title-ru: ural experience
 layout: post
@@ -14,5 +14,6 @@ number: "14"
 img: "14"
 year: 2020
 link: "https://www.behance.net/gallery/98121463/uralexperience-concept-website-about-ural-mountains"
+link_text: ""
 web: ""
 ---

@@ -1,5 +1,5 @@
 ---
-id: 14
+id: 7
 title: hc automobilist
 title-ru: хк автомобилист
 layout: post
@@ -14,5 +14,6 @@ number: "18"
 img: "18"
 year: 2020
 link: "https://www.behance.net/gallery/109512807/hc-automobilist-logo-concept"
+link_text: ""
 web: ""
 ---

@@ -1,5 +1,5 @@
 ---
-id: 3
+id: 18
 title: sky monitor
 title-ru: sky monitor
 layout: post
@@ -14,5 +14,6 @@ number: "07"
 img: "07"
 year: 2020
 link: "https://www.behance.net/gallery/97486837/sky-monitor-sistema-monitoringa-kachestva-vozduha"
+link_text: ""
 web: ""
 ---

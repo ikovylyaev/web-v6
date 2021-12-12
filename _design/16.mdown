@@ -1,5 +1,5 @@
 ---
-id: 7
+id: 14
 title: ekatalog
 title-ru: ekatalog
 layout: post
@@ -14,5 +14,6 @@ number: "16"
 img: "16"
 year: 2020
 link: "https://www.behance.net/gallery/104025493/ekatalog-concept-of-website"
+link_text: ""
 web: ""
 ---

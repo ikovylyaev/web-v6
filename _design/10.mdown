@@ -1,5 +1,5 @@
 ---
-id: 4
+id: 17
 title: nature expedition
 title-ru: натуральный поход
 layout: post
@@ -14,5 +14,6 @@ number: "08"
 img: "08"
 year: 2020
 link: "https://www.behance.net/gallery/90215023/naturalnyj-pohod-logotip-serii-video-iz-pohodov"
+link_text: ""
 web: ""
 ---

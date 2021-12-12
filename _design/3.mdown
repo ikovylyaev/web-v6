@@ -1,5 +1,5 @@
 ---
-id: 17
+id: 4
 title: greentech
 title-ru: факультет энергетики и экотехнологий
 layout: post
@@ -14,5 +14,6 @@ number: "01"
 img: "01"
 year: 2020
 link: "https://www.behance.net/gallery/108752549/greentech-logotype"
+link_text: ""
 web: ""
 ---

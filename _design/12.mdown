@@ -1,5 +1,5 @@
 ---
-id: 0
+id: 21
 title: russia airlines
 title-ru: russia airlines
 layout: post
@@ -14,5 +14,6 @@ number: "12"
 img: "12"
 year: 2019
 link: "https://www.behance.net/gallery/83497243/design-concept-of-website-of-airline"
+link_text: ""
 web: ""
 ---

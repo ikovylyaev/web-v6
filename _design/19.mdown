@@ -1,5 +1,5 @@
 ---
-id: 20
+id: 2
 title: our-history.su
 title-ru: our-history.su
 layout: post
@@ -14,5 +14,6 @@ number: "19"
 img: "19"
 year: 2021
 link: "https://www.behance.net/gallery/126700591/our-historyru-enciklopedija-rossijskoj-istorii"
+link_text: ""
 web: ""
 ---

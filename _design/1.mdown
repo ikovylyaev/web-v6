@@ -1,5 +1,5 @@
 ---
-id: 16
+id: 5
 title: developer portfolio
 title-ru: портфолио разработчика
 layout: post
@@ -14,6 +14,7 @@ number: "10"
 img: "10"
 year: 2021
 link: "https://www.behance.net/gallery/123102343/Developer-portfolio"
+link_text: ""
 web: "v8tenko.github.io"
 ---
 

@@ -1,0 +1,19 @@
+---
+id: 1
+title: Finka DS
+title-ru: Дизайн система Финка
+layout: post
+date: '2020-12-12 20:00:00 +0500'
+type: design
+categories: ux/ui
+categories-ru: ux/ui
+concept: 
+concept-ru: 
+permalink: "/design/finka/"
+number: "21"
+img: "21"
+year: 2020
+link: "https://www.figma.com/@ikovylyaev"
+link_text: "figma"
+web: "https://finka.ikovylyaev.com"
+---

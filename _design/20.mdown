@@ -1,5 +1,5 @@
 ---
-id: 11
+id: 10
 title: buah
 title-ru: buah
 layout: post
@@ -14,5 +14,6 @@ number: "20"
 img: "20"
 year: 2020
 link: "https://www.behance.net/gallery/108513327/Buah-ajdentika-dostavki-svezhih-fruktov"
+link_text: ""
 web: ""
 ---

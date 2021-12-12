@@ -1,5 +1,5 @@
 ---
-id: 12
+id: 9
 title: visit ekaterinburg
 title-ru: visit ekaterinburg
 layout: post
@@ -14,5 +14,6 @@ number: "17"
 img: "17"
 year: 2020
 link: "https://www.behance.net/gallery/98168505/visit-ekaterinburg-concept-mobile-app-for-tourists"
+link_text: ""
 web: ""
 ---
