@@ -61,7 +61,6 @@
     <script src="https://ikovylyaev.com/resources/js/owl.carousel.min.js"></script>
 </head>
 <body style='padding-bottom: 0px; margin-bottom: 0px;'>
-    
     <div class="container-fluid">
     <nav class="py-2">
         <div class="d-flex flex-wrap">
@@ -87,355 +86,340 @@
                     <a class="nav-link" href="https://vk.com/ikovylyaev">vk</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="https://www.youtube.com/channel/UCf9GOVc0qKKPB-Ee3LfH_uw" style="padding-right: 0;">youtube</a>
+                    <a class="nav-link" href="https://www.youtube.com/channel/UCf9GOVc0qKKPB-Ee3LfH_uw" style='padding-right: 0;'>youtube</a>
                 </li>
             </ul>
             <ul class="nav nav-lang-1">
                 <li class="nav-item">
-                    <a class="nav-link" href="https://ikovylyaev.com">ru</a>
+                    <a class="nav-link" href="{{site.url}}">ru</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="https://ikovylyaev.com/en">en</a>
+                    <a class="nav-link active" aria-current="page" href="{{site.url}}/en">en</a>
                 </li>
             </ul>
         </div>
     </nav>
     <header class="py-3 mb-4">
         <div class="row">
-            <a href="https://ikovylyaev.com" class="col-md-6 col-12">
-                <img src="https://ikovylyaev.com/img/logo.svg" class="logotype" alt="ikovylyaev-logo" />
+            <a href="{{site.url}}" class="col-md-6 col-12">
+                <img src="{{site.url}}/img/logo.svg" class="logotype" alt="ikovylyaev-logo">
             </a>
             <div class="col-md-6 col-12 text-right" style="position: relative">
-                <ul class="nav nav-lang-2" style="position: absolute; right: 0;">
+                <ul class="nav nav-lang-2" style='position: absolute; right: 0;'>
                     <li class="nav-item">
-                        <a class="nav-link" href="https://ikovylyaev.com">ru</a>
+                        <a class="nav-link" href="{{site.url}}">ru</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="https://ikovylyaev.com/en">en</a>
+                        <a class="nav-link active" aria-current="page" href="{{site.url}}/en">en</a>
                     </li>
                 </ul>
             </div>
         </div>
     </header>
         <div class="row">
-            
-            <div class="col">
-                <div class="header">
-                    <div class="bg" style="background: url(https://ikovylyaev.com/img/bg/19.webp); background-size: cover; background-position: center;"></div>
-                    <div class="text">
-                        <h2 class="h3">our-history.su</h2>
-                        <span>ux/ui</span>
-                        
+            {% for post in site.design limit: 1 %}
+            <div class='col'>
+                <div class='header'>
+                    <div class='bg' style='background: url({{site.url}}/img/bg/{{post.img}}.webp); background-size: cover; background-position: center;'></div>
+                    <div class='text'>
+                        <h2 class="h3">{{ post.title }}</h2>
+                        <span>{{ post.categories }}</span>
+                        {% if post.concept == 'concept' %}
                             <span>concept</span>
-                        
-                        
-                            <a href="https://www.behance.net/gallery/126700591/our-historyru-enciklopedija-rossijskoj-istorii" target="_blank">behance</a>
-                        
-                        
+                        {% endif %}
+                        {% if post.link != "" %}
+                            <a href='{{post.link}}' target="_blank">behance</a>
+                        {% endif %}
+                        {% if post.web != "" %}
+                            <p style='opacity: .6; display: inline;'>/</p>   <a href="https://{{post.web}}" target="_blank">{{post.web}}</a>
+                        {% endif %}
                     </div>
                 </div>
             </div>
-            
+            {% endfor %}
         </div>
-        <div class="row">
-            
+        <div class='row'>
+            {% for post in site.design limit: 1 offset: 1 %}
             <div class="col-md-6 col-12">
-                <div class="header">
-                    <div class="bg" style="background: url(https://ikovylyaev.com/img/bg/11.webp); background-size: cover; background-position: center;"></div>
-                    <div class="text">
-                        <h2 class="h3">greentech</h2>
-                        <span>ux/ui</span>
-                        
+                <div class='header'>
+                    <div class='bg' style='background: url({{site.url}}/img/bg/{{post.img}}.webp); background-size: cover; background-position: center;'></div>
+                    <div class='text'>
+                        <h2 class="h3">{{ post.title }}</h2>
+                        <span>{{ post.categories }}</span>
+                        {% if post.concept == 'concept' %}
                             <span>concept</span>
-                        
-                        
-                        
+                        {% endif %}
+                        {% if post.link != "" %}
+                            <a href='{{post.link}}' target="_blank">behance</a>
+                        {% endif %}
+                        {% if post.web != "" %}
+                            <p style='opacity: .6; display: inline;'>/</p>   <a href="https://{{post.web}}" target="_blank">{{post.web}}</a>
+                        {% endif %}
                     </div>
                 </div>
             </div>
-            
-            <div class="col-md-6 col-12">
-                
-                    <div class="header-half">
-                        <div class="bg" style="background: url(https://ikovylyaev.com/img/bg/01.webp); background-size: cover; background-position: center;"></div>
-                        <div class="text">
-                            <h2 class="h3">greentech</h2>
-                            <span>brand</span>
-                            
-                            
-                                <a href="https://www.behance.net/gallery/108752549/greentech-logotype" target="_blank">behance</a>
-                            
-                            
+            {% endfor %}
+            <div class='col-md-6 col-12'>
+                {% for post in site.design limit: 2 offset: 2 %}
+                    <div class='header-half'>
+                        <div class='bg' style='background: url({{site.url}}/img/bg/{{post.img}}.webp); background-size: cover; background-position: center;'></div>
+                        <div class='text'>
+                            <h2 class="h3">{{ post.title }}</h2>
+                            <span>{{ post.categories }}</span>
+                            {% if post.concept == 'concept' %}
+                                <span>concept</span>
+                            {% endif %}
+                            {% if post.link != "" %}
+                                <a href='{{post.link}}' target="_blank">behance</a>
+                            {% endif %}
+                            {% if post.web != "" %}
+                                <p style='opacity: .6; display: inline;'>/</p>   <a href="https://{{post.web}}" target="_blank">{{post.web}}</a>
+                            {% endif %}
                         </div>
                     </div>
-                
-                    <div class="header-half">
-                        <div class="bg" style="background: url(https://ikovylyaev.com/img/bg/10.webp); background-size: cover; background-position: center;"></div>
-                        <div class="text">
-                            <h2 class="h3">developer portfolio</h2>
-                            <span>ui/ux</span>
-                            
-                            
-                                <a href="https://www.behance.net/gallery/123102343/Developer-portfolio" target="_blank">behance</a>
-                            
-                            
-                                <p style="opacity: .6; display: inline;">/</p>   <a href="https://v8tenko.github.io" target="_blank">v8tenko.github.io</a>
-                            
-                        </div>
-                    </div>
-                
+                {% endfor %}
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-6 col-12">
-                
-                    <div class="header-half">
-                        <div class="bg" style="background: url(https://ikovylyaev.com/img/bg/09.webp); background-size: cover; background-position: center;"></div>
-                        <div class="text">
-                            <h2 class="h3">petersburg subway</h2>
-                            <span>navigation</span>
-                            
+        <div class='row'>
+            <div class='col-md-6 col-12'>
+                {% for post in site.design limit: 2 offset: 4 %}
+                    <div class='header-half'>
+                        <div class='bg' style='background: url({{site.url}}/img/bg/{{post.img}}.webp); background-size: cover; background-position: center;'></div>
+                        <div class='text'>
+                            <h2 class="h3">{{ post.title }}</h2>
+                            <span>{{ post.categories }}</span>
+                            {% if post.concept == 'concept' %}
                                 <span>concept</span>
-                            
-                            
-                                <a href="https://www.behance.net/gallery/114945397/concept-of-the-logo-and-navigation-of-petersburg-subway" target="_blank">behance</a>
-                            
-                            
+                            {% endif %}
+                            {% if post.link != "" %}
+                                <a href='{{post.link}}' target="_blank">behance</a>
+                            {% endif %}
+                            {% if post.web != "" %}
+                                <p style='opacity: .6; display: inline;'>/</p>   <a href="https://{{post.web}}" target="_blank">{{post.web}}</a>
+                            {% endif %}
                         </div>
                     </div>
-                
-                    <div class="header-half">
-                        <div class="bg" style="background: url(https://ikovylyaev.com/img/bg/18.webp); background-size: cover; background-position: center;"></div>
-                        <div class="text">
-                            <h2 class="h3">hc automobilist</h2>
-                            <span>brand</span>
-                            
-                                <span>concept</span>
-                            
-                            
-                                <a href="https://www.behance.net/gallery/109512807/hc-automobilist-logo-concept" target="_blank">behance</a>
-                            
-                            
-                        </div>
-                    </div>
-                
+                {% endfor %}
             </div>
-            
+            {% for post in site.design limit: 1 offset: 6 %}
             <div class="col-md-6 col-12">
-                <div class="header">
-                    <div class="bg" style="background: url(https://ikovylyaev.com/img/bg/02.webp); background-size: cover; background-position: center;"></div>
-                    <div class="text">
-                        <h2 class="h3">itmo.clubs</h2>
-                        <span>ui/ux</span>
-                        
-                        
-                        
-                    </div>
-                </div>
-            </div>
-            
-        </div>
-        <div class="row">
-            
-            <div class="col-md-6 col-12">
-                <div class="header">
-                    <div class="bg" style="background: url(https://ikovylyaev.com/img/bg/17.webp); background-size: cover; background-position: center;"></div>
-                    <div class="text">
-                        <h2 class="h3">visit ekaterinburg</h2>
-                        <span>ux/ui</span>
-                        
+                <div class='header'>
+                    <div class='bg' style='background: url({{site.url}}/img/bg/{{post.img}}.webp); background-size: cover; background-position: center;'></div>
+                    <div class='text'>
+                        <h2 class="h3">{{ post.title }}</h2>
+                        <span>{{ post.categories }}</span>
+                        {% if post.concept == 'concept' %}
                             <span>concept</span>
-                        
-                        
-                            <a href="https://www.behance.net/gallery/98168505/visit-ekaterinburg-concept-mobile-app-for-tourists" target="_blank">behance</a>
-                        
-                        
+                        {% endif %}
+                        {% if post.link != "" %}
+                            <a href='{{post.link}}' target="_blank">behance</a>
+                        {% endif %}
+                        {% if post.web != "" %}
+                            <p style='opacity: .6; display: inline;'>/</p>   <a href="https://{{post.web}}" target="_blank">{{post.web}}</a>
+                        {% endif %}
                     </div>
                 </div>
             </div>
-            
-            <div class="col-md-6 col-12">
-                
-                    <div class="header-half">
-                        <div class="bg" style="background: url(https://ikovylyaev.com/img/bg/20.webp); background-size: cover; background-position: center;"></div>
-                        <div class="text">
-                            <h2 class="h3">buah</h2>
-                            <span>brand</span>
-                            
-                                <span>concept</span>
-                            
-                            
-                                <a href="https://www.behance.net/gallery/108513327/Buah-ajdentika-dostavki-svezhih-fruktov" target="_blank">behance</a>
-                            
-                            
-                        </div>
-                    </div>
-                
-                    <div class="header-half">
-                        <div class="bg" style="background: url(https://ikovylyaev.com/img/bg/03.webp); background-size: cover; background-position: center;"></div>
-                        <div class="text">
-                            <h2 class="h3">studentsup</h2>
-                            <span>brand</span>
-                            
-                                <span>concept</span>
-                            
-                            
-                                <a href="https://www.behance.net/gallery/106871815/StudentsUP-koncept-vnutrennej-programmy-itmo" target="_blank">behance</a>
-                            
-                            
-                        </div>
-                    </div>
-                
-            </div>
+            {% endfor %}
         </div>
-        <div class="row">
+        <div class='row'>
+            {% for post in site.design limit: 1 offset: 7 %}
             <div class="col-md-6 col-12">
-                
-                    <div class="header-half">
-                        <div class="bg" style="background: url(https://ikovylyaev.com/img/bg/04.webp); background-size: cover; background-position: center;"></div>
-                        <div class="text">
-                            <h2 class="h3">hawk mobile</h2>
-                            <span>ux/ui</span>
-                            
-                                <span>concept</span>
-                            
-                            
-                                <a href="https://www.behance.net/gallery/105774851/Hawk-mobile-client-concept" target="_blank">behance</a>
-                            
-                            
-                        </div>
-                    </div>
-                
-                    <div class="header-half">
-                        <div class="bg" style="background: url(https://ikovylyaev.com/img/bg/05.webp); background-size: cover; background-position: center;"></div>
-                        <div class="text">
-                            <h2 class="h3">infolab</h2>
-                            <span>ui/ux</span>
-                            
-                                <span>concept</span>
-                            
-                            
-                                <a href="https://www.behance.net/gallery/105604541/Infolab-a-place-to-turn-your-ideas-into-reality" target="_blank">behance</a>
-                            
-                            
-                        </div>
-                    </div>
-                
-            </div>
-            
-            <div class="col-md-6 col-12">
-                <div class="header">
-                    <div class="bg" style="background: url(https://ikovylyaev.com/img/bg/16.webp); background-size: cover; background-position: center;"></div>
-                    <div class="text">
-                        <h2 class="h3">ekatalog</h2>
-                        <span>ux/ui</span>
-                        
+                <div class='header'>
+                    <div class='bg' style='background: url({{site.url}}/img/bg/{{post.img}}.webp); background-size: cover; background-position: center;'></div>
+                    <div class='text'>
+                        <h2 class="h3">{{ post.title }}</h2>
+                        <span>{{ post.categories }}</span>
+                        {% if post.concept == 'concept' %}
                             <span>concept</span>
-                        
-                        
-                            <a href="https://www.behance.net/gallery/104025493/ekatalog-concept-of-website" target="_blank">behance</a>
-                        
-                        
+                        {% endif %}
+                        {% if post.link != "" %}
+                            <a href='{{post.link}}' target="_blank">behance</a>
+                        {% endif %}
+                        {% if post.web != "" %}
+                            <p style='opacity: .6; display: inline;'>/</p>   <a href="https://{{post.web}}" target="_blank">{{post.web}}</a>
+                        {% endif %}
                     </div>
                 </div>
             </div>
-            
+            {% endfor %}
+            <div class='col-md-6 col-12'>
+                {% for post in site.design limit: 2 offset: 8 %}
+                    <div class='header-half'>
+                        <div class='bg' style='background: url({{site.url}}/img/bg/{{post.img}}.webp); background-size: cover; background-position: center;'></div>
+                        <div class='text'>
+                            <h2 class="h3">{{ post.title }}</h2>
+                            <span>{{ post.categories }}</span>
+                            {% if post.concept == 'concept' %}
+                                <span>concept</span>
+                            {% endif %}
+                            {% if post.link != "" %}
+                                <a href='{{post.link}}' target="_blank">behance</a>
+                            {% endif %}
+                            {% if post.web != "" %}
+                                <p style='opacity: .6; display: inline;'>/</p>   <a href="https://{{post.web}}" target="_blank">{{post.web}}</a>
+                            {% endif %}
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
         </div>
-        <div class="row">
-            
+        <div class='row'>
+            <div class='col-md-6 col-12'>
+                {% for post in site.design limit: 2 offset: 10 %}
+                    <div class='header-half'>
+                        <div class='bg' style='background: url({{site.url}}/img/bg/{{post.img}}.webp); background-size: cover; background-position: center;'></div>
+                        <div class='text'>
+                            <h2 class="h3">{{ post.title }}</h2>
+                            <span>{{ post.categories }}</span>
+                            {% if post.concept == 'concept' %}
+                                <span>concept</span>
+                            {% endif %}
+                            {% if post.link != "" %}
+                                <a href='{{post.link}}' target="_blank">behance</a>
+                            {% endif %}
+                            {% if post.web != "" %}
+                                <p style='opacity: .6; display: inline;'>/</p>   <a href="https://{{post.web}}" target="_blank">{{post.web}}</a>
+                            {% endif %}
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+            {% for post in site.design limit: 1 offset: 12 %}
             <div class="col-md-6 col-12">
-                <div class="header">
-                    <div class="bg" style="background: url(https://ikovylyaev.com/img/bg/14.webp); background-size: cover; background-position: center;"></div>
-                    <div class="text">
-                        <h2 class="h3">ural experience</h2>
-                        <span>ux/ui</span>
-                        
+                <div class='header'>
+                    <div class='bg' style='background: url({{site.url}}/img/bg/{{post.img}}.webp); background-size: cover; background-position: center;'></div>
+                    <div class='text'>
+                        <h2 class="h3">{{ post.title }}</h2>
+                        <span>{{ post.categories }}</span>
+                        {% if post.concept == 'concept' %}
                             <span>concept</span>
-                        
-                        
-                            <a href="https://www.behance.net/gallery/98121463/uralexperience-concept-website-about-ural-mountains" target="_blank">behance</a>
-                        
-                        
+                        {% endif %}
+                        {% if post.link != "" %}
+                            <a href='{{post.link}}' target="_blank">behance</a>
+                        {% endif %}
+                        {% if post.web != "" %}
+                            <p style='opacity: .6; display: inline;'>/</p>   <a href="https://{{post.web}}" target="_blank">{{post.web}}</a>
+                        {% endif %}
                     </div>
                 </div>
             </div>
-            
+            {% endfor %}
+        </div>
+        <div class='row'>
+            {% for post in site.design limit: 1 offset: 14 %}
             <div class="col-md-6 col-12">
-                
-                    <div class="header-half">
-                        <div class="bg" style="background: url(https://ikovylyaev.com/img/bg/08.webp); background-size: cover; background-position: center;"></div>
-                        <div class="text">
-                            <h2 class="h3">nature expedition</h2>
-                            <span>ux/ui</span>
-                            
-                            
-                                <a href="https://www.behance.net/gallery/97512781/naturalnyj-pohod-veb-sajt" target="_blank">behance</a>
-                            
-                            
-                        </div>
+                <div class='header'>
+                    <div class='bg' style='background: url({{site.url}}/img/bg/{{post.img}}.webp); background-size: cover; background-position: center;'></div>
+                    <div class='text'>
+                        <h2 class="h3">{{ post.title }}</h2>
+                        <span>{{ post.categories }}</span>
+                        {% if post.concept == 'concept' %}
+                            <span>concept</span>
+                        {% endif %}
+                        {% if post.link != "" %}
+                            <a href='{{post.link}}' target="_blank">behance</a>
+                        {% endif %}
+                        {% if post.web != "" %}
+                            <p style='opacity: .6; display: inline;'>/</p>   <a href="https://{{post.web}}" target="_blank">{{post.web}}</a>
+                        {% endif %}
                     </div>
-                
-                    <div class="header-half">
-                        <div class="bg" style="background: url(https://ikovylyaev.com/img/bg/07.webp); background-size: cover; background-position: center;"></div>
-                        <div class="text">
-                            <h2 class="h3">sky monitor</h2>
-                            <span>ui/ux</span>
-                            
+                </div>
+            </div>
+            {% endfor %}
+            <div class='col-md-6 col-12'>
+                {% for post in site.design limit: 2 offset: 15 %}
+                    <div class='header-half'>
+                        <div class='bg' style='background: url({{site.url}}/img/bg/{{post.img}}.webp); background-size: cover; background-position: center;'></div>
+                        <div class='text'>
+                            <h2 class="h3">{{ post.title }}</h2>
+                            <span>{{ post.categories }}</span>
+                            {% if post.concept == 'concept' %}
                                 <span>concept</span>
-                            
-                            
-                                <a href="https://www.behance.net/gallery/97486837/sky-monitor-sistema-monitoringa-kachestva-vozduha" target="_blank">behance</a>
-                            
-                            
+                            {% endif %}
+                            {% if post.link != "" %}
+                                <a href='{{post.link}}' target="_blank">behance</a>
+                            {% endif %}
+                            {% if post.web != "" %}
+                                <p style='opacity: .6; display: inline;'>/</p>   <a href="https://{{post.web}}" target="_blank">{{post.web}}</a>
+                            {% endif %}
                         </div>
                     </div>
-                
+                {% endfor %}
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-6 col-12">
-                
-                    <div class="header-half">
-                        <div class="bg" style="background: url(https://ikovylyaev.com/img/bg/06.webp); background-size: cover; background-position: center;"></div>
-                        <div class="text">
-                            <h2 class="h3">recyclica</h2>
-                            <span>ui/ux</span>
-                            
-                            
-                                <a href="https://www.behance.net/gallery/96708697/recyclica-mobile" target="_blank">behance</a>
-                            
-                            
-                        </div>
-                    </div>
-                
-                    <div class="header-half">
-                        <div class="bg" style="background: url(https://ikovylyaev.com/img/bg/13.webp); background-size: cover; background-position: center;"></div>
-                        <div class="text">
-                            <h2 class="h3">mediaskills</h2>
-                            <span>ux/ui</span>
-                            
+        <div class='row'>
+            <div class='col-md-6 col-12'>
+                {% for post in site.design limit: 2 offset: 17 %}
+                    <div class='header-half'>
+                        <div class='bg' style='background: url({{site.url}}/img/bg/{{post.img}}.webp); background-size: cover; background-position: center;'></div>
+                        <div class='text'>
+                            <h2 class="h3">{{ post.title }}</h2>
+                            <span>{{ post.categories }}</span>
+                            {% if post.concept == 'concept' %}
                                 <span>concept</span>
-                            
-                            
-                                <a href="https://www.behance.net/gallery/90783987/prototip-veb-sajta-i-logotipa-konkursa-mediaskills" target="_blank">behance</a>
-                            
-                            
+                            {% endif %}
+                            {% if post.link != "" %}
+                                <a href='{{post.link}}' target="_blank">behance</a>
+                            {% endif %}
+                            {% if post.web != "" %}
+                                <p style='opacity: .6; display: inline;'>/</p>   <a href="https://{{post.web}}" target="_blank">{{post.web}}</a>
+                            {% endif %}
                         </div>
                     </div>
-                
+                {% endfor %}
             </div>
-            
-            
+            {% for post in site.design limit: 1 offset: 19 %}
+            <div class="col-md-6 col-12">
+                <div class='header'>
+                    <div class='bg' style='background: url({{site.url}}/img/bg/{{post.img}}.webp); background-size: cover; background-position: center;'></div>
+                    <div class='text'>
+                        <h2 class="h3">{{ post.title }}</h2>
+                        <span>{{ post.categories }}</span>
+                        {% if post.concept == 'concept' %}
+                            <span>concept</span>
+                        {% endif %}
+                        {% if post.link != "" %}
+                            <a href='{{post.link}}' target="_blank">behance</a>
+                        {% endif %}
+                        {% if post.web != "" %}
+                            <p style='opacity: .6; display: inline;'>/</p>   <a href="https://{{post.web}}" target="_blank">{{post.web}}</a>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        <div class='col'>
+            <div class='header-end'>
+                <div class='row'>
+                    <h3 class='h1'>do you want to work with me?</h3>
+                    <div style='padding-top: 15vh;'>
+                        <p style='margin-bottom: 5px;'><a href='{{ site.url }}/files/timetable.pdf' target='blank'>timetable</a> and <a href='{{ site.url }}/files/info.pdf' target='blank'>portfolio (ru)</a></p>
+                        <p style='margin-bottom: 5px;'>also you can see my works at <a href='https://behance.net/ikovylyaev' target='blank'>behance</a> and <a href='https://figma.net/@ikovylyaev' target='blank'>figma</a></p>
+                        <p style='margin-bottom: 5px;'>now living in <i>Saint-Petersburg</i></p>
+                    </div>
+                </div>
+                <div class='row'  style="padding-top: 25vh;">
+                    <div class='col-3'>
+                        <img src='{{ site.url }}/img/author.png' alt='иван ковыляев' style='width: 5vw;'>
+                        <h6 style='padding-top: 10px; padding-bottom: 0px; margin-bottom: 0px;'>kovylyaev ivan</h6>
+                        <p>ux/ui designer</p>
+                    </div>
+                    <div class='col'><h4><a href="https://t.me/ikovylyaev">telergam</a></h4><p style='margin-bottom: 5px;'>for fast chat</p><i>ikovylyaev</i></div>
+                    <div class='col'><h4><a href="mailto:hi@ikovylyaev.com">write email</a></h4><p style='margin-bottom: 5px;'>for official info</p><i>hi@ikovylyaev.com</i></div>
+                </div>
+            </div>
         </div>
             <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
                 <div class="col-md-4">
-                    <a href="https://ikovylyaev.com">
-                        <img src="https://ikovylyaev.com/img/logo.svg" class="logotype-footer" alt="ikovylyaev-logo" />
-                    </a><br />
-                    <a href="https://ikovylyaev.com/privacy/" class="link" style="margin-right: 25px">privacy policy (ru)</a><br />
-                    <a href="https://ikovylyaev.com/terms/" class="link" style="margin-right: 25px">terms of use (ru)</a>
+                    <a href="{{site.url}}">
+                        <img src="{{site.url}}/img/logo.svg" class="logotype-footer" alt="ikovylyaev-logo">
+                    </a><br>
+                    <a href="{{ site.url }}/privacy/" class='link' style="margin-right: 25px">privacy policy (ru)</a><br>
+                    <a href="{{ site.url }}/terms/" class='link' style="margin-right: 25px">terms of use (ru)</a>
                 </div>
-                <ul class="nav col-md-4 justify-content-end list-unstyled d-flex nav-lang-2" style="margin-right: -1rem;">
+                <ul class="nav col-md-4 justify-content-end list-unstyled d-flex nav-lang-2" style='margin-right: -1rem;'>
                     <li class="nav-item">
                         <a class="nav-link" href="mailto:hi@ikovylyaev.com">hi@ikovylyaev.com</a>
                     </li>
@@ -446,7 +430,7 @@
                         <a class="nav-link" href="https://vk.com/ikovylyaev">vk</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="https://www.youtube.com/channel/UCf9GOVc0qKKPB-Ee3LfH_uw">youtube</a>
+                        <a class="nav-link" href="https://www.youtube.com/channel/UCf9GOVc0qKKPB-Ee3LfH_uw" >youtube</a>
                     </li>
                 </ul>
             </footer>
