@@ -1,0 +1,19 @@
+---
+id: 5
+title: Mezon
+title-ru: Мезон
+layout: post
+date: '2022-09-23 20:00:00 +0500'
+type: design
+categories: ux/ui
+categories-ru: ux/ui
+concept: concept
+concept-ru: концепт
+permalink: "/design/mezon/"
+number: "25"
+img: "25"
+year: 2022
+link: "https://www.behance.net/gallery/153359249/Mezon"
+link_text: "behance"
+web: ""
+---
