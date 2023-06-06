@@ -200,8 +200,6 @@ font-family: 'IBM Plex Sans', sans-serif;
     .header-end{
         width: 100%;
         margin-bottom: 1.5rem;
-        min-height: calc(100vh - 1.5rem);
-        height: 100%;
         background: #E9E9E9;
         padding: 50px;
     }
